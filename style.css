@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+}
+.offer-section {
+
+    background-color: #1E232C;
+}
+
+/* brands-section */
+#brands-section {
+    margin-top: 5vw;
+}
+
+.verticaline {
+    border-left: black solid 3px;
+}
+
+.contact-main {
+    background-color:#1E232C ;
+    margin: 2rem;
+    padding: 5%;
+}
+
+.contact-int-1{
+    padding: 1.5vw;
+    margin: 1rem 0rem;
+}
+
+.contact-int-2 {
+    padding: 2.2vw;
+    margin: 1rem 0rem;
+}
+
+.side-navbar-menu {
+    background-color:#1E232C ;
+}
+
+/* slider */
+
+.slider {
+ 
+ 
+ width: 100%;
+}
+.slider-image-containers{
+    transition: 2s;
+}
+
+
+.products-row {
+gap: 5em;
+} 
+
+.new-arrivals-card {
+    flex-basis:250px ;
+    border-radius: 8px;
+    flex-grow: 1;
+   
+}
+
+.new-arrivals-card_img {
+    
+    object-fit: cover;
+    border-radius: 8px;
+    
+}
+
+
+#new-arrivals_box {
+    gap:5%;
+}

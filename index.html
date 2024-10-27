@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link rel="icon" href="https://www.w3schools.com/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+</head>
+
+<body>
+    <div id="offer-bar" class="offer-section flex  flex-1 justify-center gap-5  text-slate-200 md:gap-36 p-2">
+        <h1 class=" text-xs md:text-xl lg:text-3xl text-center" >Sign Up and <b>GET 20% OFF</b> for your first
+            Order</h1>
+        <img id="offer-close" class=" h-4 md:h-6 lg:h-8 object-contain cursor-pointer "
+            src="./Nostra images/Icons/cross.png">
+
+    </div>
+
+
+    <div class="navbar bg-white sticky top-0 z-50 flex justify-between px-5 py-4">
+        <div> <h1 class=" text-2xl font-bold ">Nostra</h1></div>
+
+        <div class="navbar_menu hidden md:flex justify-around w-2/4">
+
+            <p> <a href="./index.html">Home</a></p>
+            <p class="new-arrivals-button"><a  href="#">New Arrival</a></p>
+            <p class="most-wanted-button" ><a href="#">Most Wanted</a></p>
+            <p><a href="./collections.html">Collections</a></p>
+            <p><a href="./contact.html">Contact Us</a></p>
+
+        </div>
+        <img id="menu-icon" class=" w-7 cursor-pointer md:hidden" src="./Nostra images/Icons/hamburger.png " alt="menu-icon">
+    </div>
+
+    <div id="navbar-menu" class="side-navbar-menu z-50 h-screen  text-white fixed md:hidden transition-all duration-1000" style="width:50%; top: 0; left:-50%" >
+
+        <p>
+            <img id="menu-close" class=" absolute top-5 w-3 right-4 cursor-pointer" src="./Nostra images/Icons/close.png" alt="">
+           </p>
+
+            <div class="side-navbar-card px-5 mt-5">
+
+                <p class="py-5"> <a href="./index.html">Home</a></p>
+                <p class="py-5"><a href="">New Arrival</a></p>
+                <p class="py-5"><a  href="">Most Wanted</a></p>
+                <p class="py-5"><a href="./collections.html">Collections</a></p>
+                <p class="py-5"><a href="./contact.html">Contact Us</a></p>
+
+            </div>
+
+    </div>
+
+
+
+
+
+    <div class="containor px-4">
+
+
+        <div class="slider relative">
+            <div class="slider-leftbutton">
+                <img class="absolute" src="./Nostra images/Icons/left-arrow.png" alt="left arrow" style="top: 35%; width: 7%; left: 5%;" onclick="prevSlide()">
+            </div>
+            <div class="slider-rightbutton">
+                <img class="absolute" src="./Nostra images/Icons/right-arrow.png" alt="right arrow" style="top: 35%; width: 7%; right: 5%;" onclick="nextSlide()">
+            </div>
+            <div class="slider-image-containers flex">
+                <img class="slider-image rounded-md w-full" src="./Nostra images/slider-one.jpg" alt="banner" style="display: block;">
+                <img class="slider-image rounded-md w-full" src="./Nostra images/slider-two.jpg" alt="banner2" style="display: none;">
+                <img class="slider-image rounded-md w-full" src="./Nostra images/slider-three.jpg" alt="banner3" style="display: none;">
+            </div>
+            <div class="text-center absolute text-white ml-12 md:ml-52" style="top: 17%;">
+                <h1 class="font-extrabold" style="font-size:5vw">Level up your style with our</h1>
+                <p class="font-bold">Summer Collections</p>
+                <button class="z-0 bg-slate-100 text-black mt-3 px-4 py-2 text-sm rounded">Shop Now 🡢</button>
+            </div>
+        </div>
+        
+
+        <div id="brands-section">
+            <p class="text-2xl font-bold  px-5">Brands</p>
+            <div class=" flex w-full justify-between mt-5" id="brand-box">
+
+                <div class=" flex flex-col items-center"><img class="w-[4vw]"
+                        src="./Nostra images/Icons/b-1--behance.png" alt="">
+                    <p style="font-size:2vw">Behance</p>
+                </div>
+
+                <div class=" flex flex-col items-center"><img class="w-[4vw]"
+                        src="./Nostra images/Icons/b-2--adidas.png" alt="">
+                    <p style="font-size:2vw">Adidas</p>
+                </div>
+                <div class=" flex flex-col items-center"> <img class="w-[4vw]" src="./Nostra images/Icons/simple.png"
+                        alt="">
+                    <p style="font-size:2vw">Simple</p>
+                </div>
+                <div class=" flex flex-col items-center"><img class="w-[4vw]" src="./Nostra images/Icons/leaves.png"
+                        alt="">
+                    <p style="font-size:2vw">Leaves</p>
+                </div>
+
+                <div class=" flex flex-col items-center"> <img class="w-[4vw]" src="./Nostra images/Icons/puma.png"
+                        alt="">
+                    <p style="font-size:2vw">Puma</p>
+                </div>
+
+
+                <div class=" flex flex-col items-center"><img class="w-[4vw]" src="./Nostra images/Icons/twitch.png"
+                        alt="">
+                    <p style="font-size:2vw">Twitch</p>
+                </div>
+                <div class=" flex flex-col items-center"> <img class="w-[4vw]" src="./Nostra images/Icons/nike.png"
+                        alt="">
+                    <p style="font-size:2vw">Nike</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class=" Rewiews initial-1 mt-5 md:mt-20">
+            <div class="initial-1-rewiew  flex items-center  justify-between">
+
+                <div>
+                    <h1 class="font-bold" style="font-size:2vw">We Provide Best</h1>
+                    <h1 class="font-bold" style="font-size:2vw">Customer Experiences</h1>
+                </div>
+                <p style="font-size:1.5vw">|| We ensure that our customer have the best shopping experience</p>
+            </div>
+            <div class="initial-1-services flex md:mt-10" style="font-size: 1vw;">
+                <div class="bg-blue-50 p-2 rounded m-2">
+                    <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-regular fa-circle-check"></i>
+                    <h3 class="font-bold">Original Products</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+                </div>
+
+
+                <div class="bg-blue-50 p-2 rounded m-2">
+                    <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-regular fa-face-smile"></i>
+                    <h3 class="font-bold">Satisfaction Guarantee</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+                </div>
+
+
+
+                <div class="bg-blue-50 p-2 rounded m-2">
+                    <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-solid fa-broom"></i>
+                    <h3 class="font-bold">New Arrival Everyday</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+                </div>
+
+                <div class="bg-blue-50 p-2 rounded m-2">
+                    <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-solid fa-truck-fast"></i>
+                    <h3 class="font-bold">Fast & Free Shipping</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+
+
+        <div id="new-arrivals" class="initial-2 mt-5 md:mt-20">
+            <h1 class="font-bold text-2xl">New Arrivals</h1>
+
+            <div id="new-arrivals_box"  class="flex justify-between">
+
+
+                <div style="margin-top: 2%;" class="new-arrivals-card relative">
+                    <img style="width:20vw" src="./Nostra images/Products/f1.jpg" alt="">
+                    <button style="top:55% ;  left:20%; font-size: 1.2vw; padding: 4% 8%; z-index: 2;"
+                        class=" absolute bg-slate-200 text-black  rounded-xl">Shop Now 🡢</button>
+                    <div class="overlay bg-black absolute w-full h-full top-0 opacity-60 rounded md:rounded-md"></div>
+                </div>
+                <div style="margin-top: 2%;" class="new-arrivals-card relative">
+                    <img style="width:20vw" src="./Nostra images/Products/b1.jpg" alt="">
+                    <button style="top:55% ;  left:20%; font-size: 1.2vw; padding: 4% 8%; z-index: 2;"
+                        class=" absolute bg-slate-200 text-black  rounded-xl">Shop Now 🡢</button>
+                    <div class="overlay bg-black absolute w-full h-full top-0 opacity-60 rounded md:rounded-md"></div>
+                </div>
+                <div style="margin-top: 2%;" class="new-arrivals-card relative">
+                    <img style="width:20vw" src="./Nostra images/Products/p7.jpg" alt="">
+                    <button style="top:55% ;  left:20%; font-size: 1.2vw; padding: 4% 8%; z-index: 2;"
+                        class=" absolute bg-slate-200 text-black  rounded-xl">Shop Now 🡢</button>
+                    <div class="overlay bg-black absolute w-full h-full top-0 opacity-60 rounded md:rounded-md"></div>
+                </div>
+                <div style="margin-top: 2%;" class="new-arrivals-card relative">
+                    <img style="width:20vw" src="./Nostra images/Products/f3.jpg" alt="">
+                    <button style="top:55% ;  left:20%; font-size: 1.2vw; padding: 4% 8%; z-index: 2;"
+                        class=" absolute bg-slate-200 text-black  rounded-xl">Shop Now 🡢</button>
+                    <div class="overlay bg-black absolute w-full h-full top-0 opacity-60 rounded md:rounded-md"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="most-wanted" class="initial-3 mt-8 md:mt-16 overflow-x-auto ">
+            <h1 class="font-bold text-2xl">Most Wanted</h1>
+            <div class="flex justify-between">
+
+
+                <div style="margin-top: 2%; margin: 1%;  display: inline-block;" class="new-arrivals-card relative display: inline-block;">
+                    <img class="new-arrivals-card_img"  style="width:20vw   " src="./Nostra images/Products/f2.jpg" alt="">
+                    <p class="text-center absolute top-0 left-0 rounded-md"
+                        style="background-color: red; padding-left: 10px; padding-right: 10px; font-size: 2vw; color: aliceblue;">
+                        sale</p>
+                    <img class="like-button absolute bottom-3.5 right-1 " style="width:3vw ;" src="./Nostra images/Icons/blackheart.png" alt="blackheart">
+                    
+                </div>
+
+                <div style="margin-top: 2%;  margin: 1%;  display: inline-block;" class="new-arrivals-card relative display: inline-block;">
+                    <img class="new-arrivals-card_img" style="width:20vw" src="./Nostra images/Products/p6.jpg" alt="">
+                    <p class="text-center absolute top-0 left-0 rounded-md"
+                        style="background-color: red; padding-left: 10px; padding-right: 10px; font-size: 2vw; color: aliceblue;">sale</p>
+                    <img class="like-button  absolute bottom-3.5 right-1 " style="width:3vw ;"
+                        src="./Nostra images/Icons/blackheart.png" alt="">
+                       
+                </div>
+
+                <div style="margin-top: 2%; margin: 1%;  display: inline-block;" class="new-arrivals-card relative ">
+                    <img class="new-arrivals-card_img" style="width:20vw" src="./Nostra images/Products/d3.jpg" alt="">
+                    <p class="text-center absolute top-0 left-0 rounded-md"
+                        style="background-color: red; padding-left: 10px; padding-right: 10px; font-size: 2vw; color: aliceblue;">sale</p>
+                    <img class="like-button  absolute bottom-3.5 right-1 " style="width:3vw ;"
+                        src="./Nostra images/Icons/blackheart.png" alt="">
+                       
+                </div>
+ 
+                <div style="margin-top: 2%; margin: 1%;  display: inline-block;" class="new-arrivals-card relative display: inline-block;">
+                    <img class="new-arrivals-card_img" style="width:20vw" src="./Nostra images/Products/f5.jpg" alt="">
+                    <p class="text-center absolute top-0 left-0 rounded-md"
+                        style="background-color: red; padding-left: 10px; padding-right: 10px; font-size: 2vw; color: aliceblue;">sale</p>
+                    <img class="like-button  absolute bottom-3.5 right-1" style="width:3vw ;"src="./Nostra images/Icons/blackheart.png" alt="">
+                    
+                </div>
+
+                <div style="margin-top: 2%; margin: 1%;  display: inline-block;" class="new-arrivals-card relative">
+                    <img class="new-arrivals-card_img" style="width:20vw" src="./Nostra images/Products/p3.jpg" alt="">
+                    <p class="text-center absolute top-0 left-0 rounded-md"
+                        style="background-color: red; padding-left: 10px; padding-right: 10px; font-size: 2vw; color: aliceblue;">sale</p>
+                    <img class="like-button  absolute bottom-3.5 right-1 " style="width:3vw ;"src="./Nostra images/Icons/blackheart.png" alt="">
+                    
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+        <div class="initial-4-section-1 flex" style="background-color:#1E232C; padding: 3.5% 10%; gap: 6%;">
+            <div>
+                <img src="./Nostra images/offer.jpg" alt="">
+            </div>
+
+            <div class="initial-4-section-2">
+                <h1 style="font-size:3vw" class=" font-bold text-white">Limited Offer</h1>
+                <p style="font-size:2vw" class=" font-bold text-white">35% OFF on this for the first 30 Customers</p>
+                <button style="font-size: 1.2vw; padding: 2% 4%; z-index: 2;"
+                    class=" bg-slate-200 text-black  rounded-xl">Shop Now 🡢</button>
+
+            </div>
+
+        </div>
+
+
+        <div class="News Letter text-center mt-5 md:mt-28">
+            <h1 class="font-bold md:text-6xl">Join our News Letter</h1>
+
+            <p style="font-size: 2vw; margin-bottom: 1%;">Signup for our email newspaper to get exclusive discounts,
+                updates, and more</p>
+            <input style="border: solid #1D232C 3px;" class="w-10/12 py-1" type="text"> <br>
+            <button style="background-color: #1D232C; margin-bottom: 5%; font-size: 1.8vw; padding: 10px ;"
+                class=" text-white rounded-xl md:text-3xl mt-4">Subscribe ➜</button>
+
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        <div class=" text-white" style="background-color:#1E232C; padding: 3rem;">
+            <div>
+                <div>
+                    <h1 style="font-size: 3vw;" class=" text-xs font-bold">Nostra</h1>
+                    <p style="font-size: 1.9vw; margin-top: 2%; margin-bottom: 2%;">The Standard chunk of Lorem ipsum
+                        used since the 1500s is reprodused below for those interest</p>
+                </div>
+                <div class="flex ml-3 my-2 gap-12 md:gap-24  md:ml-6 md:my-7">
+                    <div style="width: 2%;"> <img src="./Nostra images/Icons/instagram.png" alt=""> </div>
+                    <div style="width: 2%;"> <img src="./Nostra images/Icons/twitter.png" alt=""></div>
+                    <div style="width: 2%;"> <img src="./Nostra images/Icons/facebook.png" alt=""> </div>
+                </div>
+                <p class="text-xs md:text-4xl font-normal ">@ 2023 Nostra.com</p>
+            </div>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>

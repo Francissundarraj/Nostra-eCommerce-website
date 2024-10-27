@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra-collections</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div id="offer-bar" class="offer-section flex  flex-1 justify-center gap-5  text-slate-200 md:gap-36 p-2">
+        <h1 class=" text-xs md:text-xl lg:text-3xl text-center" >Sign Up and <b>GET 20% OFF</b> for your first
+            Order</h1>
+        <img id="offer-close" class=" h-4 md:h-6 lg:h-8 object-contain cursor-pointer "
+            src="./Nostra images/Icons/cross.png">
+
+    </div>
+
+
+    <div class="navbar bg-white sticky top-0 z-50 flex justify-between px-5 py-4">
+            
+        <h1 class=" text-2xl font-bold ">Nostra</h1>
+
+        <div class="navbar_menu hidden md:flex justify-around w-2/4">
+
+            <p> <a href="./index.html">Home</a></p>
+            <p><a href="">New Arrival</a></p>
+            <p><a href="">Most Wanted</a></p>
+            <p><a href="./collections.html">Collections</a></p>
+            <p><a href="./contact.html">Contact Us</a></p>
+
+        </div>
+        <img id="menu-icon" class=" w-7 cursor-pointer md:hidden" src="./Nostra images/Icons/hamburger.png " alt="">
+    </div>
+
+    <div id="navbar-menu" class="side-navbar-menu z-50 h-screen  text-white fixed md:hidden transition-all duration-1000" style="width:50%; top: 0; left:-50%" >
+
+        <p>
+            <img id="menu-close" class=" absolute top-5 w-3 right-4 cursor-pointer" src="./Nostra images/Icons/close.png" alt="">
+           </p>
+
+            <div class="side-navbar-card px-5 mt-5">
+
+                <p class="py-5"> <a href="./index.html">Home</a></p>
+                <p class="py-5"><a href="">New Arrival</a></p>
+                <p class="py-5"><a href="">Most Wanted</a></p>
+                <p class="py-5"><a href="./collections.html">Collections</a></p>
+                <p class="py-5"><a href="./contact.html">Contact Us</a></p>
+
+            </div>
+
+    </div>
+
+    <div class="collections-section p-3.5 flex">
+
+        <div class="collections-section-1 mr-7 flex text-xs md:text-4xl md:mr-14" style="margin-top: 4vw;">
+
+            <div class="filters">
+                <div class="collections-occasion" style="margin-bottom: 4vw;">
+                    <h1 class="text-xs font-bold mb-3 md:text-5xl md:mb-7">Occasion</h1>
+                    <input class=" bg-slate-500 mr-1 mb-2 md:my-1 md:mr-3 md:mb-5" type="checkbox" name="intval" id="summer"
+                        value="summer">Floral <br>
+
+                    <input class=" mr-1 mb-2 md:my-1 md:mr-3 md:mb-5" type="checkbox" name="intval" id="party"
+                        value="party">Party<br>
+
+                    <input class="mr-1 mb-2 md:my-1 md:mr-3 md:mb-5" type="checkbox" name="intval" id="beach"
+                        value="beach">Beach<br>
+
+                </div>
+
+                <div class="collections-colors" style="margin-bottom: 4vw;">
+                    <h1 class="text-xs font-bold mb-3 md:text-5xl md:mb-7">Colors</h1>
+                    <input class=" mr-1 mb-2 md:my-1 md:mr-3 md:mb-5" type="checkbox" name="intval" id="red"
+                        value="red">Red <br>
+
+                    <input class=" mr-1 mb-2 md:my-1 md:mr-3 md:mb-5" type="checkbox" name="intval" id="blue"
+                        value="blue">Blue<br>
+
+                    <input class="mr-1 mb-2 md:my-1 md:mr-3 md:mb-5" type="checkbox" name="intval" id="white"
+                        value="white">White<br>
+
+                    <input class="mr-1 mb-2 md:my-1 md:mr-3 md:mb-5" type="checkbox" name="intval" id="green"
+                        value="green">Green<br>
+
+                </div>
+
+                <div class="collections-material" style="margin-bottom: 4vw;">
+                    <h1 class="text-xs font-bold mb-3 md:text-5xl md:mb-7">Material</h1>
+                    <input class=" mr-1 mb-2 md:my-1 md:mr-3 md:mb-5" type="checkbox" name="intval" id="Cotton"
+                        value="Cotton">Cotton <br>
+
+                    <input class=" mr-1 mb-2 md:my-1 md:mr-3 md:mb-5" type="checkbox" name="intval" id="denim"
+                        value="denim">Denim<br>
+
+                    <input class="mr-1 mb-2 md:my-1 md:mr-3 md:mb-5" type="checkbox" name="intval" id="rayon"
+                        value="rayon">Rayon<br>
+
+                    <input class="mr-1 mb-2 md:my-1 md:mr-3 md:mb-5" type="checkbox" name="intval" id="satin"
+                        value="satin">Satin<br>
+
+                </div>
+
+                <div class="collections-arrivals" style="margin-bottom: 4vw;">
+                    <h1 class="text-xs font-bold mb-3 md:text-5xl md:mb-7">Arrivals</h1>
+                    <input class=" mr-1 mb-2 md:my-1 md:mr-3 md:mb-5" type="checkbox" name="intval" id="new"
+                        value="new">New <br>
+
+                    <input class=" mr-1 mb-2 md:my-1 md:mr-3 md:mb-5" type="checkbox" name="intval" id="old"
+                        value="old">Old<br>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="verticaline">
+            <hr class="vertical-line h-full">
+
+
+        </div>
+
+        <div class="collections-section-2 w-full px-3 md:px-7 relative">
+
+            <input id="searchbar" class="border border-black w-full rounded-xl h-10" type=" text" placeholder="   search">
+            <img class="absolute w-3.5 top-3.5 right-10 cursor-pointer"
+                src="./Nostra images/Icons/search-interface-symbol.png" alt="" tag="">
+                
+
+            <div class=" products-row flex flex-wrap ">
+
+
+                <div  style="margin-top: 2%;" data-="" class="new-arrivals-card relative" data-tags="new, white, floral">
+                    <img  src="./Nostra images/Products/b1.jpg" alt="">
+                    <h3 class="font-bold" style="font-size: 1.5vw;">Printed Beach Shirt</h3>
+                    <p class="text-xs md:text-2xl">₹1450</p>
+                </div>
+
+                <div style="margin-top: 2%;" class="new-arrivals-card relative" data-tags="new, party, beach">
+                    <img src="./Nostra images/Products/g1.png" alt="">
+                    <h3 class="font-bold" style="font-size: 1.5vw;">Denim Mens Shirt</h3>
+                    <p class="text-xs md:text-2xl">₹1450</p>
+                </div>
+
+                <div style="margin-top: 2%;" class="new-arrivals-card relative" data-tags="new, floral, Cotton">
+                    <img  src="./Nostra images/Products/f2.jpg" alt="">
+                    <h3 class="font-bold" style="font-size: 1.5vw;">Designer Shirt</h3>
+                    <p class="text-xs md:text-2xl">₹1220</p>
+                </div>
+
+                <div style="margin-top: 2%;" class="new-arrivals-card relative" data-tags="new, floral, beach">
+                    <img  src="./Nostra images/Products/f3.jpg" alt="">
+                    <h3 class="font-bold" style="font-size: 1.5vw;">Floral Summer Shirt</h3>
+                    <p class="text-xs md:text-2xl">₹1099</p>
+                </div>
+
+
+
+
+
+                <div style="margin-top: 2%;" class="new-arrivals-card relative" data-tags="new, white, Floral">
+                    <img  src="./Nostra images/Products/f4.jpg" alt="">
+                    <h3 class="font-bold" style="font-size: 1.5vw;">Printed Floral Shirt</h3>
+                    <p class="text-xs md:text-2xl">₹1049</p>
+                </div>
+                <div style="margin-top: 2%;" class="new-arrivals-card relative" data-tags="old, red, summer">
+                    <img  src="./Nostra images/Products/p3.jpg" alt="">
+                    <h3 class="font-bold" style="font-size: 1.5vw;">Formal Party Wear</h3>
+                    <p class="text-xs md:text-2xl">₹1450</p>
+                </div>
+
+                <div style="margin-top: 2%;" class="new-arrivals-card relative" data-tags="new, blue, beach">
+                    <img  src="./Nostra images/Products/f5.jpg" alt="">
+                    <h3 class="font-bold" style="font-size: 1.5vw;">Floral Summer Shirt</h3>
+                    <p class="text-xs md:text-2xl">₹899</p>
+                </div>
+
+                <div style="margin-top: 2%;" class="new-arrivals-card relative" data-tags="old, blue, party">
+                    <img  src="./Nostra images/Products/p6.jpg" alt="">
+                    <h3 class="font-bold" style="font-size: 1.5vw;">Womens Party wear</h3>
+                    <p class="text-xs md:text-2xl">₹1150</p>
+                </div>
+
+
+
+                <div style="margin-top: 2%;" class="new-arrivals-card relative" data-tags="new, white, Cotton">
+                    <img  src="./Nostra images/Products/c1.jpg" alt="">
+                    <h3 class="font-bold" style="font-size: 1.5vw;">Cotton Regular Solid </h3>
+                    <p class="text-xs md:text-2xl">₹220</p>
+                </div>
+                <div style="margin-top: 2%;" class="new-arrivals-card relative" data-tags="old,white, Cotton"> 
+                    <img  src="./Nostra images/Products/c2.jpg" alt="">
+                    <h3 class="font-bold" style="font-size: 1.5vw;">Cotton Regular Shirt</h3>
+                    <p class="text-xs md:text-2xl">₹1450</p>
+                </div>
+                <div style="margin-top: 2%;" class="new-arrivals-card relative" data-tags="new, white, Cotton">
+                    <img  src="./Nostra images/Products/c3.jpg" alt="">
+                    <h3 class="font-bold" style="font-size: 1.5vw;">Cotton Formal Shirt</h3>
+                    <p class="text-xs md:text-2xl">₹220</p>
+                </div>
+
+                <div style="margin-top: 2%;" class="new-arrivals-card relative" data-tags="new, green,  rayon">
+                    <img  src="./Nostra images/Products/c4.jpg" alt="">
+                    <h3 class="font-bold" style="font-size: 1.5vw;">Printed Half-Sleeve</h3>
+                    <p class="text-xs md:text-2xl">₹220</p>
+                </div>
+                
+
+                <div style="margin-top: 2%;" class="new-arrivals-card relative" data-tags="satin, white, party">
+                    <img  src="./Nostra images/Products/p1.jpg" alt="">
+                    <h3 class="font-bold" style="font-size: 1.5vw;">Party wear stripe </h3>
+                    <p class="text-xs md:text-2xl">₹220</p>
+                </div>
+                <div style="margin-top: 2%;" class="new-arrivals-card relative" data-tags="new, satin, party">
+                    <img  src="./Nostra images/Products/p2.jpg" alt="">
+                    <h3 class="font-bold" style="font-size: 1.5vw;">Solid Satin Shirt</h3>
+                    <p class="text-xs md:text-2xl">₹1450</p>
+                </div>
+                <div style="margin-top: 2%;" class="new-arrivals-card relative" data-tags="old, blue, party">
+                    <img  src="./Nostra images/Products/d1.jpg" alt="">
+                    <h3 class="font-bold" style="font-size: 1.5vw;">Denim grey shirt </h3>
+                    <p class="text-xs md:text-2xl">₹220</p>
+                </div>
+
+                <div style="margin-top: 2%;" class="new-arrivals-card relative" data-tags="new, red, beach">
+                    <img  src="./Nostra images/Products/b3.png" alt="">
+                    <h3 class="font-bold" style="font-size: 1.5vw;">Beach wear Shirt</h3>
+                    <p class="text-xs md:text-2xl">₹220</p>
+                </div>
+
+
+
+
+                <div style="margin-top: 2%;" class="new-arrivals-card relative" data-tags="green, floral, old">
+                    <img  src="./Nostra images/Products/b2.png" alt="">
+                    <h3 class="font-bold" style="font-size: 1.5vw;">Beach wear Shirt </h3>
+                    <p class="text-xs md:text-2xl">₹220</p>
+                </div>
+                <div style="margin-top: 2%;" class="new-arrivals-card relative" data-tags="old, blue, summer">
+                    <img  src="./Nostra images/Products/b4.jpg" alt="">
+                    <h3 class="font-bold" style="font-size: 1.5vw;">Printed Beach Shirt</h3>
+                    <p class="text-xs md:text-2xl">₹1450</p>
+                </div>
+                <div style="margin-top: 2%;" class="new-arrivals-card relative" data-tags="new, blue, denim">
+                    <img  src="./Nostra images/Products/d2.jpg" alt="">
+                    <h3 class="font-bold" style="font-size: 1.5vw;">Denim blue shirt</h3>
+                    <p class="text-xs md:text-2xl">₹220</p>
+                </div>
+
+                <div style="margin-top: 2%;" class="new-arrivals-card relative" data-tags="old, denim, summer">
+                    <img  src="./Nostra images/Products/p4.jpg" alt="">
+                    <h3 class="font-bold" style="font-size: 1.5vw;">Denim Casual Shirt</h3>
+                    <p class="text-xs md:text-2xl">₹220</p>
+                </div>
+
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div class="News Letter text-center mt-5 md:mt-28">
+        <h1 class="font-bold md:text-6xl">Join our News Letter</h1>
+
+        <p style="font-size: 2vw; margin-bottom: 1%;">Signup for our email newspaper to get exclusive discounts,
+            updates, and more</p>
+        <input style="border: solid #1D232C 3px;" class="w-10/12 py-1" type="text"> <br>
+        <button style="background-color: #1D232C; margin-bottom: 5%; font-size: 1.8vw; padding: 10px ;"
+            class=" text-white rounded-xl md:text-3xl mt-4">Subscribe ➜</button>
+
+
+    </div>
+
+
+
+    <footer>
+        <div class=" footer text-white" style="background-color:#1E232C; padding: 3rem;">
+            <div>
+                <div>
+                    <h1 style="font-size: 3vw;" class=" text-xs font-bold">Nostra</h1>
+                    <p style="font-size: 1.9vw; margin-top: 2%; margin-bottom: 2%;">The Standard chunk of Lorem ipsum
+                        used since the 1500s is reprodused below for those interest</p>
+                </div>
+                <div class="flex ml-3 my-2 gap-12 md:gap-24  md:ml-6 md:my-7">
+                    <div style="width: 2%;"> <img src="./Nostra images/Icons/instagram.png" alt=""> </div>
+                    <div style="width: 2%;"> <img src="./Nostra images/Icons/twitter.png" alt=""></div>
+                    <div style="width: 2%;"> <img src="./Nostra images/Icons/facebook.png" alt=""> </div>
+                </div>
+                <p class="text-xs md:text-4xl font-normal ">@ 2023 Nostra.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="collections.js"></script>
+</body>
+
+</html>

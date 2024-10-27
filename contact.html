@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra-contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="navbar bg-white sticky top-0 z-50 flex justify-between px-5 py-5">
+        <h1 class=" text-2xl font-bold ">Nostra</h1>
+
+        <div class="navbar_menu hidden md:flex justify-around w-2/4">
+
+            <p> <a href="./index.html">Home</a></p>
+            <p><a href="">New Arrival</a></p>
+            <p><a href="">Most Wanted</a></p>
+            <p><a href="./collections.html">Collections</a></p>
+            <p><a href="./contact.html">Contact Us</a></p>
+
+        </div>
+        <img id="menu-icon" class=" w-7 cursor-pointer md:hidden" src="./Nostra images/Icons/hamburger.png " alt="">
+    </div>
+
+    <div id="navbar-menu" class="side-navbar-menu z-50 h-screen  text-white fixed md:hidden transition-all duration-1000" style="width:50%; top: 0; left:-50%" >
+        <p>
+            <img id="menu-close" class=" absolute top-5 w-3 right-4 cursor-pointer" src="./Nostra images/Icons/close.png" alt="">
+           </p>
+
+            <div class="side-navbar-card px-5 mt-5">
+
+                <p class="py-5"> <a href="./index.html">Home</a></p>
+                <p class="py-5"><a href="">New Arrival</a></p>
+                <p class="py-5"><a href="">Most Wanted</a></p>
+                <p class="py-5"><a href="./collections.html">Collections</a></p>
+                <p class="py-5"><a href="./contact.html">Contact Us</a></p>
+
+            </div>
+
+    </div>
+
+
+
+
+ 
+
+ <main>
+    <div class=" flex flex-col items-center ">
+        <div class=" contact-main w-9/12 rounded-lg  text-white ">
+
+            <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+    
+            <form action="">
+                <label for="name">Name :</label>
+            <input class=" contact-int-1 block w-11/12 rounded text-black"type="text " name="contact" required>
+    
+            <label class="block" for="email">Email :</label>
+            <input class=" contact-int-1 w-11/12 block rounded text-black" type="email" name="email" required>
+    
+            <label class="block" for="message">Message :</label>
+          <textarea class=" contact-int-2 w-11/12 rounded text-black" name="message" id="message" required></textarea>
+    
+          <input class="block bg-blue-600 mt-3 p-2 px-4 rounded cursor-pointer" type="submit" value="Submit">
+            </form>
+    
+        </div>
+    </div>
+ </main>
+
+ <div class="News Letter text-center mt-5 md:mt-28">
+    <h1 class="font-bold md:text-6xl">Join our News Letter</h1>
+
+    <p style="font-size: 2vw; margin-bottom: 1%;">Signup for our email newspaper to get exclusive discounts,
+        updates, and more</p>
+    <input style="border: solid #1D232C 3px;" class="w-10/12 py-1" type="text"> <br>
+    <button style="background-color: #1D232C; margin-bottom: 5%; font-size: 1.8vw; padding: 10px ;"
+        class=" text-white rounded-xl md:text-3xl mt-4">Subscribe ➜</button>
+
+
+</div>
+
+
+
+    
+
+  <footer>
+    <div class=" footer text-white" style="background-color:#1E232C; padding: 3rem;">
+        <div>
+            <div>
+                <h1 style="font-size: 3vw;" class=" text-xs font-bold" >Nostra</h1>
+                <p style="font-size: 1.9vw; margin-top: 2%; margin-bottom: 2%;">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+            </div>
+            <div class="flex ml-3 my-2 gap-12 md:gap-24  md:ml-6 md:my-7">
+                <div style="width: 2%;"> <img src="./Nostra images/Icons/instagram.png" alt=""> </div>
+                <div style="width: 2%;"> <img src="./Nostra images/Icons/twitter.png" alt=""></div>
+                <div style="width: 2%;"> <img src="./Nostra images/Icons/facebook.png" alt=""> </div>
+            </div>
+            <p class="text-xs md:text-4xl font-normal ">@ 2023 Nostra.com</p>
+        </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
